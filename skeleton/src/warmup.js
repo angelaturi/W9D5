@@ -2,6 +2,10 @@
 const partyHeader = document.getElementById('party');
 
 export const htmlGenerator = (string, htmlElement) => {
+    let pTag = document.createElement('p');
+    pTag.textContent = string;
+    
+    htmlElement.appendChild(pTag);
 
 };
 
