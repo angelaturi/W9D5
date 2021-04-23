@@ -1,6 +1,6 @@
-import {htmlGenerator} from './warmup'
+import { htmlGenerator } from "./warmup";
 
-const clockElement = document.querySelector('#clock')
+const clockElement = document.querySelector("#clock");
 
 class Clock {
   constructor() {
@@ -17,9 +17,9 @@ class Clock {
 
   printTime() {
     // Format the time in HH:MM:SS
-      const timeString = (`${this.hours} : ${this.minutes} : ${this.seconds}`);
+    const timeString = `${this.hours} : ${this.minutes} : ${this.seconds}`;
     // Use console.log to print it.
-        htmlGenerator(timeString, clockElement)
+    htmlGenerator(timeString, clockElement);
   }
 
   _tick() {
@@ -52,4 +52,4 @@ class Clock {
 
 const clock = new Clock();
 
-module.exports = Clock;
+// module.exports = Clock;
