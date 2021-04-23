@@ -17,7 +17,7 @@ class Clock {
 
   printTime() {
     // Format the time in HH:MM:SS
-    const timeString = `${this.hours} : ${this.minutes} : ${this.seconds}`;
+    const timeString = `${this.hours}:${this.minutes}:${this.seconds}`;
     // Use console.log to print it.
     htmlGenerator(timeString, clockElement);
   }

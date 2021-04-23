@@ -36,23 +36,23 @@ export function attachDogLinks() {
 attachDogLinks();
 
 function handleEnter() {
-  const dropdown = querySelectorAll(".dog-link");
-  dropdown.forEach(chil => {
+  const dropdown = document.querySelectorAll(".dog-link");
+  dropdown.forEach(child => {
     child.classList.add("open");
   });
 }
 
 function handleLeave() {
-  const dropdown = querySelectorAll(".dog-link");
-  dropdown.forEach(chil => {
+  const dropdown = document.querySelectorAll(".dog-link");
+  dropdown.forEach(child => {
     child.classList.remove("open");
   });
 }
 
 let DropDownNav = document.getElementsByClassName("drop-down-dog-nav");
 
-DropDownNav[0].addEventListener("mouseenter", handleEnter);
-DropDownNav[0].addEventListener("mouseenter", handleLeave);
+DropDownNav[0].addEventListener('mouseenter', handleEnter);
+DropDownNav[0].addEventListener('mouseleave', handleLeave);
 
 // module.exports = {
 //   attachDogLinks: attachDogLinks,
